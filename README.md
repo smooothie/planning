@@ -16,3 +16,22 @@
 1. Google maps integration to get businesses.
 1. Loans and deposists calculators.
 1. Badges, rewards.
+1. Offline mode in the apps in the future.
+1. SECURITY???
+
+## Technologies
+
+- Django backend at the start
+- React web client + React native apps in the future
+- GraphQL + fetching and backend libraries
+- Material UI for prototyping
+- Deploy to Heroku
+
+## Rough roadmap
+
+1. Essential features:
+- Accounts (cash, bank, saving, loan etc.)
+- Transactions
+- Categories
+- Polling data from Monobank
+- Basic graphs
