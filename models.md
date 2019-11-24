@@ -13,9 +13,8 @@ Start with model inherited from Django user
 
 - name
 - description - optional
-- is_active (or passive)
 - owner - Counterparty
-- is_display - whether to show it in balance
+- currency
 - balance
 
 ## Counterparty - can be user himself, another person, shop, bank etc.
@@ -25,14 +24,21 @@ Start with model inherited from Django user
 - Person
 - Shop
 - Bank
+- Employer
 
 ## Transaction
 
-- debit_account
-- credit_account
+- write_off_account
+- write_on_account
 - amount
 - currency
 - time
+- is_completed
+
+- type (visual attribute):
++ spending - choose your account to write off and a counterparty,
++ income - choose a counterparty and your account to refill,
++ transfer, loan obtain, loan repay, saving retain, saving replenishment (all identical) - choose two your accounts for transfer from one to another
 
 ### Monobank API response example:
 
