@@ -4,18 +4,10 @@
 
 Start with model inherited from Django user
 
-## AccountCategory
+## MerchantCategory
 
 - mcc (Merchant category code) https://github.com/greggles/mcc-codes/blob/master/mcc_codes.json
 - description
-
-## Account
-
-- name
-- description - optional
-- owner - Counterparty
-- currency
-- balance
 
 ## Counterparty - can be user himself, another person, shop, bank etc.
 
@@ -25,6 +17,14 @@ Start with model inherited from Django user
 - Shop
 - Bank
 - Employer
+
+## Account
+
+- name
+- description - optional
+- owner - Counterparty
+- currency
+- balance
 
 ## Transaction
 
