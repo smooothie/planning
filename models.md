@@ -1,44 +1,6 @@
 # Models description
 
-## User
-
-Start with model inherited from Django user
-
-## MerchantCategory
-
-- mcc (Merchant category code) https://github.com/greggles/mcc-codes/blob/master/mcc_codes.json
-- description
-
-## Counterparty - can be user himself, another person, shop, bank etc.
-
-## Subclasses of counterparty
-
-- Person
-- Shop
-- Bank
-- Employer
-
-## Account
-
-- name
-- description - optional
-- owner - Counterparty
-- currency
-- balance
-
-## Transaction
-
-- write_off_account
-- write_on_account
-- amount
-- currency
-- time
-- is_completed
-
-- type (visual attribute):
-+ spending - choose your account to write off and a counterparty,
-+ income - choose a counterparty and your account to refill,
-+ transfer, loan obtain, loan repay, saving retain, saving replenishment (all identical) - choose two your accounts for transfer from one to another
+https://www.lucidchart.com/invitations/accept/186d944c-95b0-4698-a9a5-b7db484295ce
 
 ### Monobank API response example:
 
